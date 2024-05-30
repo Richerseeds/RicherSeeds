@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     buttons.forEach(function(button) {
         button.addEventListener('click', function() {
-            window.location.href = "/html/home.html";
+            window.location.href = "/home.html";
         });
     });
 });
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     buttons.forEach(function(button) {
         button.addEventListener('click', function() {
-            window.location.href = "/html/home.html#about-us";
+            window.location.href = "/home.html#about-us";
         });
     });
 });
