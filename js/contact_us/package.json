@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "server": "^1.0.39"
+  },
+  "name": "contact_us",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+   
+    "start": "node script.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

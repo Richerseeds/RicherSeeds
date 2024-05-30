@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/pro.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <script src="https://kit.fontawesome.com/dbed6b614.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- header -->
+
+    <nav class="navbar">
+        <ul class="ham">
+            <li class="menu-button" onclick="showSidebar()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a>
+            </li>
+        </ul>
+        <div class="logo-name">
+            <img src="/assets/LOGO.png" alt="Logo">
+            <h1>Richerseeds</h1>
+        </div>
+        <div class="nav-buttons hideOnMobile">
+            <button class="nav-button b1">Home</button>
+            <button class="nav-button b2">About</button>
+            <div class="dropdown">
+                <button class="nav-button b3">Category</button>
+                <div class="dropdown-content">
+                    <a href="/html/pro.html#onion">Onion</a>
+                    <a href="/html/pro.html#soyabean">Soyabean</a>
+                    <a href="/html/pro.html#harbhara">Harbhara</a>
+                    <a href="/html/pro.html#ladyfinger">Ladyfinger</a>
+                    <a href="/html/pro.html#wheat">Wheat</a>
+                </div>
+            </div>
+            <button class="nav-button b4">Contact</button>
+        </div>
+    </nav>
+</div>
+<ul class="sidebar">
+    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+    <li><a href="/html/home.html">HOME</a></li>
+    <li><a href="/html/pro.html">PRODUCTS</a></li>
+    <li><a href="/html/home.html#about-us">ABOUT</a></li>
+    <li><a href="/html/index.html">CONTACT</a></li>
+</ul>
+<body>
+    <section class="products">
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Our Products</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-name">
+            <h2 id="soyabean">Soyabean</h2>
+        </section>
+        <div class="swiper-container swiper-container-soyabean">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="tile">
+                        <img src="/assets/red-onion-seed.png" alt="Category 1">
+                        <div class="description">
+                            <h3>Onion</h3>
+                            <p>Description for category 1.</p>
+                        </div>
+                        <div class="button-container">
+                            <button class="btn">Buy</button>
+                            <button class="btn" id="view">View More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tile">
+                        <img src="/assets/soyabean.png" alt="Category 2">
+                        <div class="description">
+                            <h3>Soyabean</h3>
+                            <p>Description for category 2.</p>
+                        </div>
+                        <div class="button-container">
+                            <button class="btn">Buy</button>
+                            <button class="btn" id="view">View More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tile">
+                        <img src="/assets/dry-chickpea-bowl-wooden-background_75648-9035.png" alt="Category 3">
+                        <div class="description">
+                            <h3>Harbhara</h3>
+                            <p>Description for category 3.</p>
+                        </div>
+                        <div class="button-container">
+                            <button class="btn">Buy</button>
+                            <button class="btn" id="view">View More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tile">
+                        <img src="/assets/bhumiputra-saloni-lady-finger-seeds-500x500.png" alt="Category 4">
+                        <div class="description">
+                            <h3>Ladyfinger</h3>
+                            <p>Description for category 4.</p>
+                        </div>
+                        <div class="button-container">
+                            <button class="btn">Buy</button>
+                            <button class="btn" id="view">View More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="tile">
+                        <img src="/assets/unnamed.png" alt="Category 5">
+                        <div class="description">
+                            <h3>Wheat</h3>
+                            <p>Description for category 5.</p>
+                        </div>
+                        <div class="button-container">
+                            <button class="btn">Buy</button>
+                            <button class="btn" id="view">View More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next-soyabean">
+              
+            </div>
+            <div class="swiper-button-prev swiper-button-prev-soyabean">
+               
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const swiperSoyabean = new Swiper('.swiper-container-soyabean', {
+            slidesPerView: 4,
+
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next-soyabean',
+                prevEl: '.swiper-button-prev-soyabean'
+            },
+            breakpoints: {
+                320: {
+
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                }
+            }
+        });
+    })
+    </script>
+
+
+
+
+    <!--harbhara-->
+    <section class="product-name">
+        <h2 id="harbhara">Harbhara</h2>
+    </section>
+    <div class="swiper-container swiper-container-harbhara">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="tile">
+                    <img src="/assets/red-onion-seed.png" alt="Category 1">
+                    <div class="description">
+                        <h3>Onion</h3>
+                        <p>Description for category 1.</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn">Buy</button>
+                        <button class="btn" id="view">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="tile">
+                    <img src="/assets/soyabean.png" alt="Category 2">
+                    <div class="description">
+                        <h3>Soyabean</h3>
+                        <p>Description for category 2.</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn">Buy</button>
+                        <button class="btn" id="view">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="tile">
+                    <img src="/assets/dry-chickpea-bowl-wooden-background_75648-9035.png" alt="Category 3">
+                    <div class="description">
+                        <h3>Harbhara</h3>
+                        <p>Description for category 3.</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn">Buy</button>
+                        <button class="btn" id="view">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="tile">
+                    <img src="/assets/bhumiputra-saloni-lady-finger-seeds-500x500.png" alt="Category 4">
+                    <div class="description">
+                        <h3>Ladyfinger</h3>
+                        <p>Description for category 4.</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn">Buy</button>
+                        <button class="btn" id="view">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="tile">
+                    <img src="/assets/unnamed.png" alt="Category 5">
+                    <div class="description">
+                        <h3>Wheat</h3>
+                        <p>Description for category 5.</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn">Buy</button>
+                        <button class="btn" id="view">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-button-next-harbhara">
+        </div>
+        <div class="swiper-button-prev swiper-button-prev-harbhara">
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const swiperHarbhara = new Swiper('.swiper-container-harbhara', {
+            slidesPerView: 4,
+
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next-harbhara',
+                prevEl: '.swiper-button-prev-harbhara'
+            },
+            breakpoints: {
+                320: {
+
+                    slidesPerView: 1,
+                    spaceBetween: 5
+                },
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 5
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 5
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 10
+                }
+            }   
+        });
+    })
+    </script>
+
+
+
+
+
+    <!--ladyfinger-->
+    <section class="product-name">
+        <h2 id="ladyfinger">Ladyfinger</h2>
+    </section>
+    <div class="swiper-container">
+        
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+
+                <div class="tile">
+                    <img src="/assets/red-onion-seed.png" alt="Category 1">
+                    <div class="description">
+                        <h3>Onion</h3>
+                        <p>Description for category 1.</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn">Buy</button>
+                        <button class="btn" id="view">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="tile">
+                    <img src="/assets/soyabean.png" alt="Category 2">
+                    <div class="description">
+                        <h3>Soyabean</h3>
+                        <p>Description for category 2.</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn">Buy</button>
+                        <button class="btn" id="view">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!--wheat-->
+    <section class="product-name">
+        <h2 id="wheat">Wheat</h2>
+    </section>
+    <div class="swiper-container">
+    
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+
+                <div class="tile">
+
+                    <img src="/assets/red-onion-seed.png" alt="Category 1">
+                    <div class="description">
+                        <h3>Onion</h3>
+                        <p>Description for category 1.</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn">Buy</button>
+                        <button class="btn" id="view">View More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="tile">
+                    <img src="/assets/soyabean.png" alt="Category 2">
+                    <div class="description">
+                        <h3>Soyabean</h3>
+                        <p>Description for category 2.</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn">Buy</button>
+                        <button class="btn" id="view">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+    <!--onion-->
+    <section class="product-name">
+        <h2 id="onion">Onion</h2>
+    </section>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+
+                <div class="tile">
+
+                    <img src="/assets/red-onion-seed.png" alt="Category 1">
+                    <div class="description">
+                        <h3>Onion</h3>
+                        <p>Description for category 1.</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn" >Buy</button>
+                        <button class="btn" id="view">View More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <!-- Modal Structure -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalCard" class="card">
+                <!-- Customizable content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <footer class="footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="footer-col">
+                    <h2>Richerseeds Farmer Producer Co Ltd.</h2>
+                </div>
+
+               
+                <div class="footer-col">
+                    <h4>Category</h4>
+                    <ul>
+                        <li><a href="/html/pro.html#onion">Onion</a></li>
+                        <li><a href="/html/pro.html#soyabean">Soyabean</a></li>
+                        <li><a href="/html/pro.html#harbhara">Harbhara</a></li>
+                        <li><a href="/html/pro.html#ladyfinger">Ladyfinger</a></li>
+                        <li><a href="/html/pro.html#wheat">Wheat</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                  
+                    <h4>Contact details</h4>
+                    <div class="contact-details">
+                    <ul>
+
+
+                      <li><i class="fas fa-phone-alt"></i> - +91 9923233776</li>
+                      <li><i class="fas fa-envelope"></i> - richerseeds@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> - G.no 77/7, Z.P Shala, Plot no 21, Shelud, Chikhli, Maharashtra 443207</li> 
+                    <button class="contact-button">Contact Us</button>
+                    </ul>
+                    </div>
+                </div> 
+
+                
+                <div class="footer-col">
+                    <h4>Our Location</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.678955719524!2d76.2700152732056!3d20.354877289691323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bda0fb77027cd83%3A0x18f3ea391189283e!2sRicherseeds%20Farmar%20Producer%20Co%20Ltd.!5e0!3m2!1sen!2sin!4v1716272639668!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                    
+            
+    </footer>
+
+
+
+    <script src="/js/home.js"></script>
+</body>
+<script src="/js/pro.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+
